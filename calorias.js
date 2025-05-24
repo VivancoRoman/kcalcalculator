@@ -32,8 +32,8 @@ function calcular() {
         calorias=result*1.9;
     }
   
-
-    document.getElementById("calorias").value = calorias;
+let caloriasfinales = calorias.toFixed(0);
+    document.getElementById("calorias").value = caloriasfinales;
     
 
 }

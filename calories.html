@@ -1,47 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calories</title>
     <script src="calorias.js"></script>
+
+
+
+    <hidden css>
+        <style>
+            h1 {
+                font-size: 75px;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                border-color: gold;
+                background-color: gold;
+                border-style: solid;
+                border-radius: 30px;
+                width: 800px;
+                margin: auto;
+                border-width: 10px;
+
+
+            }
+
+            .calculadora {
+                font-size: 20px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                border-color: black;
+                border-style: solid;
+                
+                border-radius: 30px;
+                border-width: 7px;
+                width: 675px;
+                margin: auto;
+
+
+            }
+
+            .boton {
+
+                background-color: black;
+                display: block;
+                margin: 20px auto;
+                padding: 15px 40px;
+                font-size: 20px;
+                color: gold;
+                border-radius: 20px;
+                cursor: pointer;
+
+
+            }
+
+            .select {
+                background-color: whitesmoke;
+                border-style: solid;
+                border-color: gold;
+                border-radius: 15px;
+                border-width: 2px;
+                width: 250px;
+                height: 50px;
+                text-align: center;
+                color: dimgrey;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            .input {
+                width: 250px;
+                padding: 15px 20px;
+                text-align: center;
+                box-sizing: border-box;
+
+                border-color: gold;
+                border-style: solid;
+                border-radius: 15px;
+
+                font-size: 17px;
+                background-color: whitesmoke;
+                color: gray;
+            }
+            .result{
+                 width: 250px;
+                padding: 15px 20px;
+                text-align: center;
+                color: gold;
+                font-size: 17px;
+
+                border-color: gold;
+                border-style: solid;
+                border-radius: 15px;
+
+                font-size: 17px;
+                background-color: black;
+                color: gold;  
+            }
+            .ingrese {
+                font-size: 35px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        </style>
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
-    <h1>Calculadora de Calorias</h1>
+    <br>
+    <h1>Calculadora de Calorias</h1> <br>
+    <br>
+    <br>
 
     <div class="calculadora">
-    <p>Ingrese su:</p>
 
-    <p>Peso <br>
-    <input type="number" placeholder="Ej. 75kg" id="peso">
-    </p>
+        <p class="ingrese">INGRESA TU</p>
 
-    <p>Edad
-        <input id="edad" type="number" placeholder="Ej. 14 y/o">
-    </p>
-    <p>Sexo
-        <select id="opsexo">
-            <option value="hombre">Hombre</option>
-            <option value="mujer">Mujer</option>
-        </select>
-    </p>
-    <p>Altura
-        <input type="number" placeholder="Ej. 180cm" id="altura">
-    </p>
-    <p>Actividad diaria
-        <select id="factor">
-            <option value="sedentario">Sedentario</option>
-            <option value="ligero">Ligero</option>
-            <option value="moderado">Moderado</option>
-            <option value="intenso">Intenso</option>
-            <option value="muyintenso">muy intenso</option>
-        </select>
-    </p>
-    <button onclick="calcular()">Calcular</button>
-    <p>Sus calorias de mantenimiento son <br>
-        <input type="number" name="" readonly id="calorias">
-    </p>
+
+        <p>Peso <br>
+            <input type="number" placeholder="Ej. 75kg" id="peso" class="input">
+        </p>
+        <p>Edad <br>
+            <input id="edad" type="number" placeholder="Ej. 14 y/o" class="input">
+        </p>
+       
+        <p>Altura <br>
+            <input type="number" placeholder="Ej. 180cm" id="altura" class="input">
+        </p>
+         <p>Sexo <br>
+            <select id="opsexo" class="select">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+        </p>
+        <p>Actividad diaria <br>
+            <select id="factor" class="select">
+                <option value="sedentario">Sedentario</option>
+                <option value="ligero">Ligero</option>
+                <option value="moderado">Moderado</option>
+                <option value="intenso">Intenso</option>
+                <option value="muyintenso">muy intenso</option>
+            </select>
+        </p>
+        <br>
+        <button class="boton" onclick="calcular()">Calcular</button>
+        <p>Sus calorias de mantenimiento son <br>
+            <input class="result" type="number" name="" readonly id="calorias">
+        </p>
     </div>
-    <a href="/Mocovi/index.html"><button>Volver a la Pagina principal</button></a>
+    <br>
+
+    <a href="index.html"><button class="boton">Volver a la Pagina principal</button></a>
+    <br>
 </body>
+
 </html>
