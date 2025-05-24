@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories</title>
+    <script src="calorias.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Calorias</h1>
+
+    <div class="calculadora">
+    <p>Ingrese su:</p>
+
+    <p>Peso <br>
+    <input type="number" placeholder="Ej. 75kg" id="peso">
+    </p>
+
+    <p>Edad
+        <input id="edad" type="number" placeholder="Ej. 14 y/o">
+    </p>
+    <p>Sexo
+        <select id="opsexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select>
+    </p>
+    <p>Altura
+        <input type="number" placeholder="Ej. 180cm" id="altura">
+    </p>
+    <p>Actividad diaria
+        <select id="factor">
+            <option value="sedentario">Sedentario</option>
+            <option value="ligero">Ligero</option>
+            <option value="moderado">Moderado</option>
+            <option value="intenso">Intenso</option>
+            <option value="muyintenso">muy intenso</option>
+        </select>
+    </p>
+    <button onclick="calcular()">Calcular</button>
+    <p>Sus calorias de mantenimiento son <br>
+        <input type="number" name="" readonly id="calorias">
+    </p>
+    </div>
+    <a href="/Mocovi/main/index.html"><button>Volver a la Pagina principal</button></a>
+</body>
+</html>
