@@ -7,6 +7,7 @@ function calcular() {
     var result;
     var calorias;
 
+    /*variable sexo*/
       if(opsexo=="mujer"){
         result = 10*peso+6.25*altura-5*edad-166;
     }
@@ -14,6 +15,7 @@ function calcular() {
         result = 10*peso+6.25*altura-5*edad+5;
     }
     
+    /*variable activity factor*/
     if(op=="sedentario"){
     calorias = result*1.2;
     }
