@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rangopressdebanca</title>
+    <script src="rangopressbanca.js"></script>
+    <style>
+        .div{
+           font-size: 20px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                border-color: black;
+                border-style: solid;
+                
+                border-radius: 30px;
+                border-width: 7px;
+                width: 675px;
+                margin: auto;
+              
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p>Ingrese su Peso <input type="number" placeholder="Ej. 80kg" id="peso"></p>
+    <p>Ingrese su PR <input type="number" placeholder="Ej. 75kg" id="pr"></p>
+    <button onclick="calcular()">Calcular</button>
+    <p>Rango de Fuerza: <input type="text" readonly placeholder="Ej. platino" id="rango"></p>
+</div>
+<a href="rangos.html"><button>Volver</button></a>
+</body>
+</html>
