@@ -2,8 +2,8 @@ function calcular(){
     var peso = parseFloat(document.getElementById("peso").value);
     var pr = parseFloat(document.getElementById("pr").value);
     var rango = pr/peso;
-    
-    var puntaje;
+    var textoRango = "";
+    var imagenSrc = "";
 
     if (rango<0.7 && rango>0) {
     document.getElementById("rango").value ="bronce";
@@ -13,6 +13,9 @@ function calcular(){
     }
     if (rango<1.1 && rango>0.9) {
         document.getElementById("rango").value ="oro"
+        
+        imagenSrc = "images/oro.jpg";
+        
     }
     
      if (rango<1.3 && rango>=1.1) {
@@ -29,7 +32,13 @@ function calcular(){
         document.getElementById("rango").value ="unreal"
     }
   
-   
+      var img = document.getElementById("imagenRango");
+    if (imagenSrc !== "") {
+        img.src = imagenSrc;
+        img.style.display = "block";
+    } else {
+        img.style.display = "none";
+    }
 
     
 }

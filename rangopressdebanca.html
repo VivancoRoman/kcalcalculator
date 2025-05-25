@@ -23,6 +23,7 @@
         }
 
         .calculadora {
+            align-items: center;
             font-size: 20px;
             text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -78,6 +79,7 @@
                 background-color: whitesmoke;
                 color: gray;
             }
+          
          a {
                 text-decoration: none;
             }
@@ -93,8 +95,11 @@
     <div class="calculadora">
         <p>Ingrese su Peso <br><input type="number" class="input" placeholder="Ej. 80kg" id="peso"></p>
         <p>Ingrese su PR <br><input type="number" class="input" placeholder="Ej. 75kg" id="pr"></p>
-        <button class="boton" onclick="calcular()">Calcular</button>
-        <p>Rango de Fuerza: <br><input type="text" class="result"  readonly placeholder="Ej. platino" id="rango"></p>
+        <button class="boton" onclick="calcular()" >Calcular</button>
+        <p>Rango de Fuerza:
+<br>
+<img id="imagenRango" style="display:none; width:200px; margin-top:10px;" alt="Imagen del rango" class="calculadora">
+           <br> <br><input type="text" class="result"  readonly placeholder="Ej. platino" id="rango"></p>
     </div>
     <a href="rangos.html"><button class="boton">Volver</button></a>
 </body>
